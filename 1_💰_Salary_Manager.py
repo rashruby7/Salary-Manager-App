@@ -49,7 +49,7 @@ if not st.session_state.expenses.empty:
     remaining = salary - total
 
     c1, c2, c3 = st.columns(3)
-    c1.metric("Cycle Start", start)
+    c1.metric("Cycle Start", start.strftime("%d %b %Y"))
     c2.metric("Total Expense", f"₹ {total}")
     c3.metric("Remaining Salary", f"₹ {remaining}")
 
